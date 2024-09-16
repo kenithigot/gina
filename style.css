@@ -1,0 +1,133 @@
+.btn-getStarted a{
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+    background-color: #c690e6;
+}
+
+.btn-getStarted a:hover{ 
+    color: #c690e6;
+    background-color:white;
+}
+
+.btn-learnMore a{
+    border-radius: 50px;
+    color: white;
+    font-size: 26px;
+    font-weight:bold;
+    background-color: #c690e6;
+}
+
+.btn-learnMore a:hover{ 
+    color: #c690e6;
+    background-color:#6d46c7;
+}
+
+.btn-link a{
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.btn-link a:hover{ 
+    color: #c690e6;
+}
+
+.filtered-img{
+    filter: drop-shadow(10px 8px 10px rgba(0, 0, 0, 0.3));  
+    width: 150px;
+    height: auto;
+}
+
+.hov-link:hover{
+    color: #c690e6;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: black; 
+}
+ .customer-service-title {
+    font-size: 75px; 
+    color: #6d46c7;
+}
+
+ /* Smaller font size for medium devices */
+ @media (max-width: 992px) {
+    .customer-service-title {
+        font-size: 50px;
+    }
+    .hov-link a{
+        font-size:28px;
+    }
+}
+
+/* Smaller font size for small devices */
+@media (max-width: 768px) {
+    .customer-service-title {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .filtered-img{
+        width: 110px;
+        height: auto;
+    }
+
+    .hov-link a{
+        font-size:20px;
+    }
+
+    .banner-info{
+        text-align: center
+    }
+
+    .btn-learnMore a{
+        font-size: 20px
+    }
+
+    .btn-learnMore{
+        text-align: center;
+    }
+}
+
+/* Even smaller font size for very small devices (mobile) */
+@media (max-width: 576px) {
+    .customer-service-title {
+        text-align: center;
+        font-size: 32px;
+        padding-top: 10px;
+    }
+
+    .filtered-img{
+        width: 100px;
+        height: auto;
+    }
+
+    .banner-info{
+        text-align: center
+    }
+
+    .hov-link a{
+        font-size:12px;
+    }
+
+    .logo-info{
+        font-size:12px;
+    }
+
+    .btn-learnMore a{
+        font-size: 12px
+    }
+
+    .btn-learnMore{
+        text-align: center;
+    }
+}
