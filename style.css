@@ -37,7 +37,7 @@
 
 .filtered-img{
     filter: drop-shadow(10px 8px 10px rgba(0, 0, 0, 0.3));  
-    width: 150px;
+    width: 140px;
     height: auto;
 }
 
@@ -54,9 +54,15 @@
 .nav-link:hover {
     color: black; 
 }
- .customer-service-title {
+
+.customer-service-title {
     font-size: 75px; 
     color: #6d46c7;
+    padding-top:40px;
+}
+
+.banner-info{
+    font-size:22px;
 }
 
  /* Smaller font size for medium devices */
@@ -67,13 +73,26 @@
     .hov-link a{
         font-size:28px;
     }
+
+    .btn-learnMore a{
+        font-size: 23px
+    }
+
+    .banner{
+        width:auto;
+    }
+
+    .hov-link a{
+        font-size:20px;
+    }
 }
 
 /* Smaller font size for small devices */
 @media (max-width: 768px) {
     .customer-service-title {
-        font-size: 40px;
+        font-size: 36px;
         text-align: center;
+        padding-top:30px;
     }
 
     .filtered-img{
@@ -82,15 +101,20 @@
     }
 
     .hov-link a{
-        font-size:20px;
+        font-size:16px;
     }
 
     .banner-info{
+        font-size:20px;
         text-align: center
     }
 
+    .banner{
+        padding-top: 30px;
+    }
+
     .btn-learnMore a{
-        font-size: 20px
+        font-size: 13px
     }
 
     .btn-learnMore{
@@ -103,7 +127,7 @@
     .customer-service-title {
         text-align: center;
         font-size: 32px;
-        padding-top: 10px;
+        padding: 0;
     }
 
     .filtered-img{
@@ -124,10 +148,14 @@
     }
 
     .btn-learnMore a{
-        font-size: 12px
+        font-size: 20px
     }
 
     .btn-learnMore{
         text-align: center;
+    }
+
+    .banner{
+        padding: 0;
     }
 }
