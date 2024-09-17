@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .btn-getStarted a{
     border-radius: 50px;
     color: white;
@@ -65,6 +69,29 @@
     font-size:22px;
 }
 
+.purposeContent{
+    font-size:40px;
+    padding-top:50px;
+}
+
+.focusContent li{
+    font-size:26px;
+}
+
+.focusContent li:hover{
+    color:#c690e6;
+}
+
+.marginAdd{
+    margin:0 180px;
+    color:#6d46c7; 
+    border:1px solid #6d46c7
+}
+
+.addPadd{
+    padding-top:50px;
+}
+
  /* Smaller font size for medium devices */
  @media (max-width: 992px) {
     .customer-service-title {
@@ -85,12 +112,25 @@
     .hov-link a{
         font-size:20px;
     }
+
+    .marginAdd{
+        margin:0;
+    }
+
+    .focusContent li{
+        font-size:24px;
+    }
+
+    .purposeContent{
+        font-size:34px;
+        padding-top:30px;
+    }
 }
 
 /* Smaller font size for small devices */
 @media (max-width: 768px) {
     .customer-service-title {
-        font-size: 36px;
+        font-size: 40px;
         text-align: center;
         padding-top:30px;
     }
@@ -120,6 +160,19 @@
     .btn-learnMore{
         text-align: center;
     }
+
+    .marginAdd{
+        margin: 0;
+    }
+
+    .focusContent li{
+        font-size:20px;
+    }
+
+    .purposeContent{
+        font-size:30px;
+        padding-top:30px;
+    }
 }
 
 /* Even smaller font size for very small devices (mobile) */
@@ -136,7 +189,8 @@
     }
 
     .banner-info{
-        text-align: center
+        text-align: center;
+        font-size:18px
     }
 
     .hov-link a{
@@ -157,5 +211,22 @@
 
     .banner{
         padding: 0;
+    }
+
+    .focusContent li{
+        font-size:14px;
+    }
+
+    .purposeContent{
+        font-size:24px;
+        padding-top:30px;
+    }
+
+    .btn-content a{
+        font-size:12px;
+    }
+
+    .addPadd{
+        padding-top:10px;
     }
 }
