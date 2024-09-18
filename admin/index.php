@@ -37,7 +37,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="channelQuality/">
                     <i class='bi bi-tv'></i>
                     <span class="text mx-2">TV Channel Quality</span>
                 </a>
@@ -80,7 +80,7 @@
                 <i class='bx bx-menu'></i> <!-- Sidebar toggle icon -->
                 <!-- Other nav content -->
             </nav>
-            <div class="head-title">
+            <!-- <div class="head-title">
                 <div class="left">
                     <h1>Dashboard</h1>
                     <ul class="breadcrumb">
@@ -89,7 +89,7 @@
                         <li><a class="active" href="#">Home</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <ul class="box-info">
                 <li>

@@ -1,5 +1,5 @@
 // Toggle sidebar visibility on mobile devices
-document.querySelector('.bx-menu')?.addEventListener('click', function() {
+document.querySelector('.bi-list')?.addEventListener('click', function() {
     document.querySelector('#sidebar').classList.toggle('show');
 });
 

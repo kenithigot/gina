@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signal Quantity</title>
-
+    
     <!-- SweetAlert Library -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
@@ -20,11 +19,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../style.css">
 
-    <!-- Sidebar Path -->
-    <?php include('../../includes/sidebar.php') ?>
+    <title>Signal Quantity</title>
 
-    <?php include('insertData.php') ?>
-
+    <!-- Sidebar Path  -->
+    <?php include('../../includes/sidebar.php'); ?>
+    
 </head>
 <body>
 
@@ -33,7 +32,7 @@
         <!-- MAIN -->
         <main>
             <nav>
-                <i class='bi bi-list'></i>
+                <i class='bi bi-list'></i> <!-- Burger icon for sidebar toggle -->
             </nav>
             <div class="head-title">
                 <div class="left">
@@ -68,11 +67,11 @@
                 <div class="col-md-9">
                     <div class="card p-4">
                         <div class="table-responsive">
-                            <table id="signalQuantityTable" class="display table" style="width:100%">
+                            <table id="example" class="display table" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Name</th>
+                                        <th>Name (Optional)</th>
                                         <th>Input</th>
                                         <th>Action</th>
                                     </tr>
@@ -87,10 +86,9 @@
     </section>
     <!-- CONTENT -->
 
-    <?php include('../../src/script.php');?>;
-
-    <!-- Script Custom -->
+    <?php include('../../src/script.php'); ?>
     <script src="../script.js"></script>
     <script src="script.js"></script>
+    
 </body>
 </html>
