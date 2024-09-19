@@ -12,65 +12,14 @@
     
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- My CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Admin Dashboard</title>
+
+    <!-- Sidebar Path -->
+    <?php include('../../includes/sidebar.php') ?>
+    
 </head>
 <body>
-
-    <!-- SIDEBAR -->
-    <section id="sidebar">
-        <a href="#" class="brand text-decoration-none">
-            <i class='bi bi-emoji-smile-fill'></i>
-            <span class="text mx-3">Admin Dashboard</span>
-        </a>
-        <ul class="side-menu top list-unstyled">
-            <li class="active">
-                <a href="#">
-                    <i class='bi bi-speedometer'></i>
-                    <span class="text mx-2">Dashboard</span>
-                </a>
-            </li>
-            <li>
-                <a href="signalQuantity/">
-                    <i class="bi bi-reception-4"></i>
-                    <span class="text mx-2">Signal Quality</span>
-                </a>
-            </li>
-            <li>
-                <a href="channelQuality/">
-                    <i class='bi bi-tv'></i>
-                    <span class="text mx-2">TV Channel Quality</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bi bi-headphones'></i>
-                    <span class="text mx-2">Service Quality</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bi bi-geo'></i>
-                    <span class="text mx-2">Accessibility</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bi bi-star'></i>
-                    <span class="text mx-2">Overall Experience</span>
-                </a>
-            </li>
-        </ul>
-        <ul class="side-menu list-unstyled">
-            <li>
-                <a href="#" class="logout">
-                    <i class='bi bi-box-arrow-in-left'></i>
-                    <span class="text mx-2">Logout</span>
-                </a>
-            </li>
-        </ul>
-    </section>
-    <!-- SIDEBAR -->
 
     <!-- CONTENT -->
     <section id="content">
@@ -147,6 +96,8 @@
         </div>
     </section>
     <!-- CONTENT -->
+
+    <?php include('../../includes/footer.php');?>;
 
     <script>
         // Sample area chart configuration

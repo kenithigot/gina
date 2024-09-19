@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Channel Quality</title>
+    <title>Accessibility</title>
 
     <!-- SweetAlert Library -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -35,11 +35,11 @@
             </nav>
             <div class="head-title">
                 <div class="left">
-                    <h1>TV Channel Quality</h1>
+                    <h1>Accessibility</h1>
                     <ul class="breadcrumb">
                         <li><a href="../" class="fs-4 text-decoration-none" style="border-bottom:2px solid #506efd">Dashboard</a></li>
                         <li><i class='bi bi-slash-lg fs-4 text-primary'></i></li>
-                        <li><a class="fs-4 text-decoration-none text-dark">TV Channel Quality</a></li>
+                        <li><a class="fs-4 text-decoration-none text-dark">Accessibility</a></li>
                     </ul>
                 </div>
             </div>
@@ -88,6 +88,7 @@
     <?php include('../../includes/footer.php');?>;
 
     <?php include('../../src/script.php'); ?>
+    
     <script src="../script.js"></script>
     <script src="script.js"></script>
     

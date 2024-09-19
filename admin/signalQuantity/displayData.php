@@ -2,7 +2,8 @@
     include('../../src/authentication.php');
 
     // Fetch data from the database table
-    $sql = "SELECT * FROM dav_category";  // Add all required fields
+    $sql = "SELECT data_id, name, valueNum, serviceCategory FROM dav_data INNER JOIN dav_category ON dav_data.uniqueKey = dav_category.uniqueKey"; 
+
     $result = $conn->query($sql);
 
     $data = array();

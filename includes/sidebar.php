@@ -6,7 +6,7 @@
         </a>
         <ul class="side-menu top list-unstyled">
             <li class="active">
-                <a href="../">
+                <a href="../dashboard/">
                     <i class='bi bi-speedometer'></i>
                     <span class="text mx-2">Dashboard</span>
                 </a>
@@ -24,19 +24,19 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../serviceQuality/">
                     <i class='bi bi-headphones'></i>
                     <span class="text mx-2">Service Quality</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../accessibility/">
                     <i class='bi bi-geo'></i>
                     <span class="text mx-2">Accessibility</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="../overallExperience/">
                     <i class='bi bi-star'></i>
                     <span class="text mx-2">Overall Experience</span>
                 </a>
@@ -44,7 +44,7 @@
         </ul>
         <ul class="side-menu list-unstyled">
             <li>
-                <a href="#" class="logout">
+                <a href="../../" class="logout">
                     <i class='bi bi-box-arrow-in-left'></i>
                     <span class="text mx-2">Logout</span>
                 </a>

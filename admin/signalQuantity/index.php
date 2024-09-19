@@ -26,7 +26,7 @@
     <?php include('insertData.php') ?>
 
 </head>
-<body>
+<body style="height: 100%;">
 
     <!-- CONTENT -->
     <section id="content">
@@ -41,13 +41,19 @@
                     <ul class="breadcrumb">
                         <li><a href="../" class="fs-4 text-decoration-none" style="border-bottom:2px solid #506efd">Dashboard</a></li>
                         <li><i class='bi bi-slash-lg fs-4 text-primary'></i></li>
-                        <li><a class="fs-4 text-decoration-none text-dark" href="#">Signal Quality</a></li>
+                        <li><a class="fs-4 text-decoration-none text-dark">Signal Quality</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3">
                     <form method="POST" id="myForm">
+                        <select class="form-select mb-3" aria-label="Default select example" name="selectQuality">
+                            <option selected disabled>Choose the Signal Quality</option>
+                            <option value="1">Signal Quality</option>
+                            <!-- <option value="2">...</option>
+                            <option value="3">...</option> -->
+                        </select>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="floatingName" placeholder="Name (Optional)">
                             <label for="floatingName">Name (Optional): <span style="color:red">*</span></label>
@@ -61,13 +67,13 @@
                             <label for="floatingInput">Third Content: <span style="color:red">*</span></label>
                         </div>
                         <div class="d-grid gap-2">
-                            <button class="btn btn-primary" type="submit" name="submitData">Submit</button>
+                            <button class="btn btn-primary py-2" type="submit" name="submitData">Submit</button>
                         </div><br>
                     </form>   
                 </div>
                 <div class="col-md-9">
                     <div class="card p-4">
-                        <div class="table-responsive">
+                        <div class="">
                             <table id="signalQuantityTable" class="display table" style="width:100%">
                                 <thead>
                                     <tr>
@@ -84,8 +90,11 @@
             </div>
         </main>
         <!-- MAIN -->
+        
     </section>
     <!-- CONTENT -->
+    
+    <?php include('../../includes/footer.php');?>;
 
     <?php include('../../src/script.php');?>;
 

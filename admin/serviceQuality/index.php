@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TV Channel Quality</title>
+    <title>Service Quantity</title>
 
     <!-- SweetAlert Library -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -20,9 +20,11 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../style.css">
 
-    <!-- Sidebar Path  -->
-    <?php include('../../includes/sidebar.php'); ?>
-    
+    <!-- Sidebar Path -->
+    <?php include('../../includes/sidebar.php') ?>
+
+    <!-- <?php include('insertData.php') ?> -->
+
 </head>
 <body>
 
@@ -31,15 +33,15 @@
         <!-- MAIN -->
         <main>
             <nav>
-                <i class='bi bi-list'></i> <!-- Burger icon for sidebar toggle -->
+                <i class='bi bi-list'></i>
             </nav>
             <div class="head-title">
                 <div class="left">
-                    <h1>TV Channel Quality</h1>
+                    <h1>Service Quantity</h1>
                     <ul class="breadcrumb">
                         <li><a href="../" class="fs-4 text-decoration-none" style="border-bottom:2px solid #506efd">Dashboard</a></li>
                         <li><i class='bi bi-slash-lg fs-4 text-primary'></i></li>
-                        <li><a class="fs-4 text-decoration-none text-dark">TV Channel Quality</a></li>
+                        <li><a class="fs-4 text-decoration-none text-dark">Service Quantity</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,11 +68,11 @@
                 <div class="col-md-9">
                     <div class="card p-4">
                         <div class="table-responsive">
-                            <table id="example" class="display table" style="width:100%">
+                            <table id="signalQuantityTable" class="display table" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Name (Optional)</th>
+                                        <th>Name</th>
                                         <th>Input</th>
                                         <th>Action</th>
                                     </tr>
@@ -87,9 +89,10 @@
 
     <?php include('../../includes/footer.php');?>;
 
-    <?php include('../../src/script.php'); ?>
+    <?php include('../../src/script.php');?>;
+
+    <!-- Script Custom -->
     <script src="../script.js"></script>
     <script src="script.js"></script>
-    
 </body>
 </html>

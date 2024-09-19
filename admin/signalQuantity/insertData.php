@@ -2,9 +2,13 @@
     include('../../src/authentication.php');
 
     if (isset($_POST["submitData"])) {
+
         $inputData = mysqli_real_escape_string($conn, $_POST["inputData"]);
-        $stmt = $conn->prepare("INSERT INTO dav_category (input) VALUES (?)");
-        $stmt->bind_param("s", $inputData);
+        $selectQuality = mysqli_real_escape_string($conn, $_POST["selectQuality"]);
+
+
+        $stmt = $conn->prepare("INSERT INTO dav_data (valueNum, uniqueKey) VALUES (?, ?)");
+        $stmt->bind_param("ss", $inputData, $selectQuality);
 
         if ($stmt->execute()) {
             echo "<script>
