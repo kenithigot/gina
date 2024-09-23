@@ -24,7 +24,7 @@ function number_format(number, decimals, dec_point, thousands_sep) {
 }
 
 async function fetchRespondentCount() {
-    const url = 'https://script.google.com/macros/s/AKfycbzAfDrWYNtcr5plk3hJALA-cu_hzNKXlWVw1SgeK5rzYuIAdJ7FuuQbrWA6CxFU1SbN/exec'; // Replace with your web app URL
+    const url = 'https://script.google.com/macros/s/AKfycbwk0qIb9Xx8oOVWSBJyO1CxWZGfDWh0g4ZWQGjf8np_MchI3kZDMr_qJ73egbTM-miI/exec'; // Replace with your web app URL
 
     try {
         const response = await fetch(url);
@@ -534,7 +534,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     datasets: [{
                         data: chartData.gender.data,
                         backgroundColor: ['#31009a', '#f40500', "gray"],
-                        hoverBackgroundColor: ['#2e59d9', '#ab201d', "gray"],
+                        hoverBackgroundColor: ['#31009a', '#ab201d', "gray"],
                         hoverBorderColor: "rgba(234, 236, 244, 1)",
                     }],
                 },
