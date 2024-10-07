@@ -37,6 +37,16 @@
                             <a class="btn p-2 px-3" aria-current="page" href="#contactId">Contact</a>
                         </li>
                     </div>
+                    <div class="d-flex px-2 fs-5 fw-bold hov-link" role="search">
+                        <li class="nav-item navbar-nav btn-link text-decoration-none text-uppercase">
+                            <a class="btn p-2 px-3" aria-current="page" href="../dashboard/">Graph Data</a>
+                        </li>
+                    </div>
+                    <div class="d-flex px-2 fs-5 fw-bold hov-link" role="search">
+                        <li class="nav-item navbar-nav btn-link text-decoration-none text-uppercase">
+                            <a class="btn p-2 px-3" aria-current="page" rel="noopener"  href="https://docs.google.com/forms/d/1sFaGtbpuUwqg5sCwlWCDa9Iw0MgW1yS_zf6fSp3daCY/viewform?edit_requested=true" target="_blank">Survey Form</a>
+                        </li>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -208,6 +218,8 @@
                     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                         <li class="nav-item"><a href="../" class="nav-link px-2 text-light">Home</a></li>
                         <li class="nav-item"><a href="#contactId" class="nav-link px-2 text-light">Contact</a></li>
+                        <li class="nav-item"><a href="../dashboard/" class="nav-link px-2 text-light">Graph Data</a></li>
+                        <li class="nav-item"><a rel="noopener" href="https://docs.google.com/forms/d/1sFaGtbpuUwqg5sCwlWCDa9Iw0MgW1yS_zf6fSp3daCY/viewform?edit_requested=true" target="_blank" class="nav-link px-2 text-light">Survey Form</a></li>
                     </ul>
                     <h3 class="text-center text-light">Contact Us</h3>
                     <div class="d-flex justify-content-center">
@@ -220,10 +232,133 @@
             </div>
         </div>
 
-        <script>
-            
-        </script>
+        <!-- <script>
+            // Second Chart
+fetch('https://script.google.com/macros/s/AKfycbwI8Fj_YZxh1dqslrB38gEz3VpO_R0i_N8VdIeDRnW_sS2u8eXSAmTZGkht3yyARZt-dg/exec')
+    .then(response => response.json())
+    .then(data => {
+        console.log('Fetched Data:', data); 
 
+        if (data && data.satisfaction && Array.isArray(data.satisfaction)) {
+            const satisfactionData = data.satisfaction;
+
+            // Labels for the second chart
+            const chartLabels2 = ["Variety Channels", "Availability (HD)", "Local Channel", "Channel Quality", "Favorite Channel"];
+
+            // Prepare datasets for the second chart
+            const datasets2 = [
+                {
+                    label: "Very Satisfied",
+                    backgroundColor: "#4e73df",
+                    hoverBackgroundColor: "#2e59d9",
+                    borderColor: "#4e73df",
+                    data: satisfactionData.map(question => question.data[5]) // Columns 9 to 13 (0-indexed 5-9)
+                },
+                {
+                    label: "Satisfied",
+                    backgroundColor: "#1cc88a",
+                    hoverBackgroundColor: "#17a673",
+                    borderColor: "#1cc88a",
+                    data: satisfactionData.map(question => question.data[6])
+                },
+                {
+                    label: "Neutral",
+                    backgroundColor: "#f6c23e",
+                    hoverBackgroundColor: "#f4b619",
+                    borderColor: "#f6c23e",
+                    data: satisfactionData.map(question => question.data[7])
+                },
+                {
+                    label: "Dissatisfied",
+                    backgroundColor: "#e74a3b",
+                    hoverBackgroundColor: "#d92e1d",
+                    borderColor: "#e74a3b",
+                    data: satisfactionData.map(question => question.data[8])
+                },
+                {
+                    label: "Very Dissatisfied",
+                    backgroundColor: "#858796",
+                    hoverBackgroundColor: "#6c757d",
+                    borderColor: "#858796",
+                    data: satisfactionData.map(question => question.data[9])
+                }
+            ];
+
+            var ctx11 = document.getElementById("mySecondBarChart");
+            var mySecondBarChart = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: chartLabels2,
+                    datasets: datasets2
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            left: 10,
+                            right: 25,
+                            top: 25,
+                            bottom: 0
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: {
+                                display: false,
+                                drawBorder: false
+                            },
+                            ticks: {
+                                maxTicksLimit: 6,
+                                padding: 10
+                            },
+                            barThickness: 15,
+                            maxBarThickness: 15
+                        },
+                        y: {
+                            grid: {
+                                display: true,
+                                drawBorder: false
+                            },
+                            ticks: {
+                                stepSize: 1,
+                                min: 0,
+                                max: Math.max(...datasets2.map(d => Math.max(...d.data))),
+                                maxTicksLimit: 5,
+                                padding: 10,
+                                callback: function (value) {
+                                    if (Number.isInteger(value)) {
+                                        return value;
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true
+                        },
+                        tooltip: {
+                            titleMarginBottom: 10,
+                            titleFont: {
+                                size: 14
+                            },
+                            backgroundColor: "rgb(255,255,255)",
+                            bodyColor: "#858796",
+                            borderColor: '#dddfeb',
+                            borderWidth: 1,
+                            displayColors: true,
+                            caretPadding: 10
+                        }
+                    }
+                }
+            });
+        } else {
+            console.error('Invalid data format:', data);
+        }
+    })
+    .catch(error => console.error('Error fetching data:', error));
+        </script> -->
+        
         <script src="script.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
